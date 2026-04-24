@@ -91,6 +91,30 @@
   mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 10%, transparent 100%);
 }
 
+.hero-watermark {
+  position: absolute;
+  right: -56px;
+  bottom: -132px;
+  width: min(40vw, 520px);
+  opacity: 0.055;
+  transform: rotate(-7deg);
+  transform-origin: center;
+  mix-blend-mode: multiply;
+}
+
+.hero-watermark::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 48% 46%, transparent 40%, rgba(255, 255, 255, 0.45) 100%);
+}
+
+.hero-watermark__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .hero-section > .kit-container {
   position: relative;
   z-index: 1;
@@ -132,6 +156,13 @@
   .kit-h1, .kit-h2, .kit-h3 {
     word-break: break-word;
     overflow-wrap: break-word;
+  }
+
+  .hero-watermark {
+    right: -44px;
+    bottom: -54px;
+    width: min(52vw, 300px);
+    opacity: 0.042;
   }
 }
 
