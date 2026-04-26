@@ -122,6 +122,18 @@
   z-index: 1;
 }
 
+.hero-brand {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--kit-gap-xl);
+}
+
+.hero-brand__logo {
+  width: min(210px, 38vw);
+  height: auto;
+  filter: drop-shadow(0 16px 28px rgba(7, 29, 48, 0.12));
+}
+
 /* ══ Responsive Typography ══ */
 @media (max-width: 1024px) {
   :root {
@@ -166,6 +178,14 @@
     width: min(52vw, 300px);
     opacity: 0.042;
   }
+
+  .hero-brand {
+    margin-bottom: var(--kit-gap-lg);
+  }
+
+  .hero-brand__logo {
+    width: min(170px, 42vw);
+  }
 }
 
 @media (max-width: 480px) {
@@ -179,6 +199,10 @@
     --kit-lh-h3: 30px;
     --kit-section-py: 56px;
     --kit-section-px: 16px;
+  }
+
+  .hero-brand__logo {
+    width: min(148px, 44vw);
   }
 }
 
