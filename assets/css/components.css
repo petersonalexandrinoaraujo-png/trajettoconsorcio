@@ -118,7 +118,7 @@ a { text-decoration: none; color: inherit; }
   border: 1px solid var(--kit-border-subtle);
 }
 .kit-btn-secondary:hover {
-  background: var(--kit-bg-light);
+  background: rgba(23, 51, 75, 0.05);
 }
 
 .kit-btn-white {
@@ -126,7 +126,7 @@ a { text-decoration: none; color: inherit; }
   color: var(--kit-primary);
 }
 .kit-btn-white:hover {
-  background: var(--kit-bg-light);
+  background: #f8f5f0;
 }
 
 .kit-btn-dark {
@@ -155,13 +155,15 @@ a { text-decoration: none; color: inherit; }
 
 /* ══ Cards ══ */
 .kit-card {
-  background: var(--kit-white);
+  background: rgba(255, 255, 255, 0.94);
   border-radius: var(--kit-radius-lg);
   padding: var(--kit-gap-xl);
   box-shadow: var(--kit-shadow-card);
   border: 1px solid var(--kit-border-subtle);
   overflow: hidden;
   position: relative;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .kit-card--dark {
@@ -181,7 +183,7 @@ a { text-decoration: none; color: inherit; }
 }
 
 .kit-card--surface {
-  background: var(--kit-bg-light);
+  background: #f7f3ed;
   border: 1px solid var(--kit-border-subtle);
 }
 
@@ -234,9 +236,9 @@ a { text-decoration: none; color: inherit; }
 }
 
 .kit-badge--accent {
-  background: var(--kit-accent-lime);
-  border-color: var(--kit-accent-lime);
-  color: var(--kit-primary);
+  background: rgba(197, 163, 90, 0.16);
+  border-color: rgba(197, 163, 90, 0.28);
+  color: var(--kit-dark);
 }
 
 .kit-badge--dark {

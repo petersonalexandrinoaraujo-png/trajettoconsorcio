@@ -40,7 +40,7 @@
   background: var(--kit-accent-purple);
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.3;
+  opacity: 0.2;
   pointer-events: none;
 }
 
@@ -51,7 +51,7 @@
   background: var(--kit-accent-blue);
   border-radius: 50%;
   filter: blur(120px);
-  opacity: 0.3;
+  opacity: 0.16;
   pointer-events: none;
 }
 
@@ -62,7 +62,7 @@
   background: var(--kit-accent-lime);
   border-radius: 50%;
   filter: blur(100px);
-  opacity: 0.2;
+  opacity: 0.14;
   pointer-events: none;
 }
 

@@ -4,7 +4,7 @@
 .hero-section {
   position: relative;
   overflow: hidden;
-  background: #fff;
+  background: linear-gradient(180deg, #fcfbf8 0%, #f4f1ec 100%);
 }
 
 /* Hero CTA — botão + preço empilhados verticalmente */
@@ -36,7 +36,9 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 90% 55% at 50% -5%, rgba(192, 173, 255, 0.22) 0%, transparent 68%);
+  background:
+    radial-gradient(ellipse 82% 54% at 50% -6%, rgba(197, 163, 90, 0.16) 0%, transparent 62%),
+    radial-gradient(ellipse 72% 48% at 85% 10%, rgba(71, 98, 122, 0.12) 0%, transparent 70%);
   animation: hero-gradient-shift 8s ease-in-out infinite;
 }
 
@@ -50,9 +52,9 @@
 .hero-orb--1 {
   width: 640px;
   height: 640px;
-  background: radial-gradient(circle, var(--kit-accent-purple) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(71, 98, 122, 0.22) 0%, transparent 70%);
   filter: blur(90px);
-  opacity: 0.28;
+  opacity: 0.22;
   top: -200px;
   left: -120px;
   animation: hero-orb-1 20s ease-in-out infinite;
@@ -61,9 +63,9 @@
 .hero-orb--2 {
   width: 560px;
   height: 560px;
-  background: radial-gradient(circle, var(--kit-accent-blue) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(197, 163, 90, 0.22) 0%, transparent 72%);
   filter: blur(80px);
-  opacity: 0.32;
+  opacity: 0.24;
   top: -100px;
   right: -140px;
   animation: hero-orb-2 25s ease-in-out infinite;
@@ -72,9 +74,9 @@
 .hero-orb--3 {
   width: 380px;
   height: 380px;
-  background: radial-gradient(circle, var(--kit-accent-lime) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(215, 214, 210, 0.45) 0%, transparent 72%);
   filter: blur(70px);
-  opacity: 0.22;
+  opacity: 0.18;
   bottom: -60px;
   left: 42%;
   animation: hero-orb-3 17s ease-in-out infinite;
@@ -84,8 +86,8 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(36, 36, 38, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(36, 36, 38, 0.035) 1px, transparent 1px);
+    linear-gradient(rgba(23, 51, 75, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 51, 75, 0.04) 1px, transparent 1px);
   background-size: 64px 64px;
   -webkit-mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 10%, transparent 100%);
   mask-image: radial-gradient(ellipse 85% 85% at 50% 40%, black 10%, transparent 100%);
@@ -96,7 +98,7 @@
   right: -56px;
   bottom: -132px;
   width: min(40vw, 520px);
-  opacity: 0.055;
+  opacity: 0.07;
   transform: rotate(-7deg);
   transform-origin: center;
   mix-blend-mode: multiply;
@@ -267,7 +269,7 @@
   height: 8px;
   min-width: 8px;
   border-radius: 50%;
-  background: var(--kit-accent-purple);
+  background: var(--kit-accent-blue);
   margin-top: 8px;
 }
 
@@ -294,8 +296,8 @@
   height: 18px;
   min-width: 18px;
   border-radius: 50%;
-  background: var(--kit-accent-lime);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23242426' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  background: var(--kit-gold-soft);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23071d30' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
@@ -350,7 +352,8 @@
   width: 48px;
   height: 48px;
   border-radius: var(--kit-radius-sm);
-  background: var(--kit-accent-lime);
+  background: var(--kit-gold-gradient);
+  border: 1px solid rgba(184, 146, 73, 0.2);
   font-family: var(--kit-font-heading);
   font-size: var(--kit-fs-h5);
   font-weight: var(--kit-fw-semibold);
@@ -450,7 +453,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--kit-accent-lime);
+  background: var(--kit-gold-gradient);
 }
 
 .pna-pricing-from {
@@ -505,8 +508,8 @@
   height: 18px;
   min-width: 18px;
   border-radius: 50%;
-  background: var(--kit-accent-lime);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23242426' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+  background: var(--kit-gold-soft);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23071d30' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 10px;
@@ -530,7 +533,7 @@
   height: 48px;
   min-width: 48px;
   border-radius: 50%;
-  background: var(--kit-accent-lime);
+  background: var(--kit-gold-gradient);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -616,15 +619,15 @@
 
 /* ══ CTA Accent button ══ */
 .kit-btn-accent {
-  background: var(--kit-accent-lime);
+  background: var(--kit-gold-gradient);
   color: var(--kit-primary);
   font-weight: var(--kit-fw-semibold);
 }
 
 .kit-btn-accent:hover {
-  background: #c8ee4e;
+  background: linear-gradient(135deg, #c29b55 0%, #e2c98c 52%, #ad8442 100%);
   transform: translateY(-1px);
-  box-shadow: 0 4px 16px rgba(217, 255, 92, 0.35);
+  box-shadow: 0 8px 24px rgba(184, 146, 73, 0.28);
 }
 
 /* ══ Identification Grid (Bloco 2) ══ */
@@ -672,7 +675,7 @@
 .pna-objection-icon {
   font-size: 22px;
   font-weight: bold;
-  color: var(--kit-accent-lime);
+  color: var(--kit-gold-pale);
   min-width: 26px;
   line-height: 1;
 }
@@ -714,7 +717,7 @@
 }
 
 .pna-spotlight-item {
-  background: var(--kit-white);
+  background: rgba(255, 255, 255, 0.78);
   border-radius: var(--kit-radius-xl);
   padding: var(--kit-gap-lg) var(--kit-gap-xl);
   box-shadow: var(--kit-shadow-card);
@@ -727,6 +730,8 @@
   color: var(--kit-primary);
   line-height: var(--kit-lh-body);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
 .pna-spotlight-item:hover {
@@ -739,8 +744,9 @@
   height: 8px;
   min-width: 8px;
   border-radius: 50%;
-  background: var(--kit-accent-lime);
+  background: var(--kit-gold-soft);
   border: 2px solid var(--kit-primary);
+  box-shadow: 0 0 0 6px rgba(197, 163, 90, 0.12);
 }
 
 /* ══ Deliverables Stack (Bloco 7 — card overlap reveal) ══ */
@@ -758,7 +764,7 @@
   gap: var(--kit-gap-lg);
   margin-top: -12px;
   position: relative;
-  background: var(--kit-white);
+  background: linear-gradient(180deg, rgba(255,255,255,0.96) 0%, rgba(244,241,236,0.94) 100%);
   border: 1px solid var(--kit-border-subtle);
   box-shadow: var(--kit-shadow-card);
   transition: transform 0.3s ease, z-index 0s, box-shadow 0.3s ease;
@@ -788,7 +794,9 @@
 /* ══ Steps Scroll Section (Bloco 6 — Tidy Build scroll-bg) ══ */
 .pna-steps-scroll-section {
   padding: var(--kit-section-py) 0;
-  background: var(--kit-gradient-light-section);
+  background:
+    radial-gradient(circle at top right, rgba(197, 163, 90, 0.1), transparent 24%),
+    var(--kit-gradient-light-section);
   transition: background 0.7s ease;
   position: relative;
   overflow: hidden;
@@ -816,7 +824,7 @@
 
 /* Phase 3: full dark */
 .pna-steps-scroll-section.pna-steps--phase-3 {
-  background: linear-gradient(180deg, #35363b 0%, #242426 100%);
+  background: linear-gradient(180deg, #10283c 0%, #071d30 100%);
 }
 
 .pna-steps-scroll-section.pna-steps--phase-3 .kit-h2 {
@@ -862,7 +870,7 @@
   font-size: 48px;
   line-height: 1;
   font-weight: var(--kit-fw-semibold);
-  color: var(--kit-primary-25);
+  color: rgba(184, 146, 73, 0.46);
   font-family: var(--kit-font-heading);
   letter-spacing: -2px;
   min-width: 80px;
@@ -871,7 +879,7 @@
 
 .pna-steps--phase-2 .pna-step-panel .pna-step-number,
 .pna-steps--phase-3 .pna-step-panel .pna-step-number {
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--kit-gold-pale);
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
 }
 
@@ -952,14 +960,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--kit-gradient-dark-section);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(197, 163, 90, 0.12), transparent 24%),
+    var(--kit-gradient-dark-section);
   overflow: hidden;
 }
 
 .pna-story-glow {
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(192, 173, 255, 0.18) 0%, transparent 70%);
+  background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(197, 163, 90, 0.22) 0%, rgba(71, 98, 122, 0.12) 36%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1002,7 +1012,7 @@
 }
 
 .pna-story-phrase--2 {
-  color: var(--kit-accent-lime);
+  color: var(--kit-gold-pale);
 }
 
 /* ══ Benefit Grid (Bloco 4) ══ */
@@ -1034,7 +1044,7 @@
   width: 48px;
   height: 48px;
   border-radius: var(--kit-radius-sm);
-  background: var(--kit-bg-surface);
+  background: linear-gradient(135deg, rgba(197, 163, 90, 0.18) 0%, rgba(255, 255, 255, 0.92) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
